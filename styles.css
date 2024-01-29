@@ -1,0 +1,56 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    animation: borderChange 5s infinite linear; /* Apply animation to continuously change border color */
+}
+
+h1 {
+    color: #333;
+}
+
+#timer {
+    font-size: 3em;
+    margin: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ccc;
+}
+
+button {
+    font-size: 1.2em;
+    margin: 10px;
+    padding: 12px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #06a7a7;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    background-color: #3e8e41;
+}
+
+@keyframes borderChange {
+    0% { border: 5px solid #afeb0c; }
+    50% { border: 5px solid #0bacf7; }
+    100% { border: 5px solid #dd089d; }
+}
